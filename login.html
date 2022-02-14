@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FD Tech Lab</title>
+    <link rel="shortcut icon" href="images/favicon-1024x1024.png">
+    <script src="javaS/jsLogin.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css2/loggedout-main.css">
+</head>
+<body>
+<header>
+    <h1>| FD Tech Lab |</h1>
+</header>
+
+<section>
+    <br>
+    <br>
+    <p class="greeting">Greetings. Please login.</p>
+    <br>
+    <br>
+    <div class="contain">
+        <form name="enForm">
+            <div>
+                <label>Username</label>
+                <br>
+                <input id="emValid" type="text" name="usName" placeholder="type here...">
+            </div>
+
+            <div>
+                <label>Password</label>
+                <br>
+                <input id="psValid" type="password" name="psWord" placeholder="type here...">
+                <input type="checkbox" onclick="revealPass()">
+            </div>
+
+            <br>
+            <button type="submit" onclick="checkLoginCreds()" >Login :)</button>
+            <a class="button" href="signup.html">Sign-Up</a>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</section>
+
+<footer>
+    <p>&copy; 2021, Sherwin Dewan & Parker Francis. | Terms of Use | Privacy Statement</p>
+</footer>
+
+</body>
+</html>
