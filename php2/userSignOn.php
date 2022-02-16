@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>FD Tech Lab</title>
-    <link rel="shortcut icon" href="images/favicon-1024x1024.png">
-    <script src="javaS/jsLogin.js"></script>
+    <link rel="shortcut icon" href="../images/favicon-1024x1024.png">
+    <script src="../javaS/jsLogin.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css2/login-main.css">
+    <link rel="stylesheet" href="../css2/login-main.css">
 </head>
 <body>
 <header>
@@ -39,7 +39,7 @@
 
             <br>
             <button type="button" onclick="checkLoginCreds()">Login :)</button>
-            <a class="button" href="signup.html">Sign-Up</a>
+            <a class="button" href="../html/signup.html">Sign-Up</a>
         </form>
     </div>
     <br>

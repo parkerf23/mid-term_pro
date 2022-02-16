@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>FD Tech Lab</title>
-    <link rel="shortcut icon" href="images/favicon-1024x1024.png">
-    <script src="javaS/jS2.js"></script>
-    <script src="php2/userStorage.php"></script>
+    <link rel="shortcut icon" href="../images/favicon-1024x1024.png">
+    <script src="../javaS/jS2.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css2/signuo-main.css">
+    <link rel="stylesheet" href="../css2/signuo-main.css">
 </head>
 <body>
 <header>
@@ -21,7 +20,7 @@
     <p class="greeting">Welcome to the Crew!</p>
     <br>
     <div class="contain">
-        <form id="unDo" name="enForm" action="php2/userStorage.php" method="post">
+        <form id="unDo" name="enForm" method="post">
             <div>
                 <label>First Name</label>
                 <br>
@@ -78,3 +77,16 @@
 
 </body>
 </html>
+<script>
+
+        if(isset($_POST['fName']))
+        {
+            $data = $_POST['fName'];
+            $fp = fopen('userData/storage.txt', 'a');
+
+            fwrite($fp, $data);
+            fclose($fp);
+
+        }
+
+</script>
