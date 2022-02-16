@@ -86,7 +86,7 @@ label {
     color: #B99BE2;
 }
 
-button[type=button] {
+button[type=submit] {
     width: 10%;
     background-color: #FFA1E2;
     color: #01415200313E;
@@ -97,7 +97,7 @@ button[type=button] {
     cursor: pointer;
 }
 
-button[type=button]:hover {
+button[type=submit]:hover {
     background-color: #B99BE2;
 }
 

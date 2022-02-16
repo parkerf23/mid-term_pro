@@ -14,6 +14,7 @@ function checkLoginCreds() {
 
     if (noInfo=== "" || noInfo2 === "") {
         alert("Populate all fields!");
+        return false;
     } else if (!result) {
         alert("Invalid email!");
         return false;
@@ -23,6 +24,7 @@ function checkLoginCreds() {
     } else {
         // This is where php will push validated user into txt file to be stored!
         alert("Access Granted, Welcome in!");
+        return true;
     }
 }
 

@@ -24,8 +24,10 @@ function checkSignInfo() {
 
     if (noInfo=== "" || noInfo2 === "" || noInfo3 === "" || noInfo4 === "" || noInfo5 === "" || noInfo6 === "") {
         alert("Populate all fields!");
+        return false;
     } else if (result || result2) {
         alert("First and Last name cannot contain numbers!");
+        return false;
     } else if (!result3) {
         alert("Invalid email!");
         return false;
@@ -35,6 +37,7 @@ function checkSignInfo() {
     } else {
         // This is where php will push validated user into txt file to be stored!
         alert("All fields populated, Welcome in!");
+        return true;
     }
 }
 
